@@ -1,11 +1,12 @@
 import vue from 'vue';
 import Router from 'vue-router';
-import App from '../App.vue';
+// import App from '../App.vue';
+import Home from '../components/home.vue'
 
-vue.use(Router);
+vue.use(Router);    
 const router = new Router({
     routes:[
-        {path: "/", component: App}
+        {path: "/", component: Home}
     ]
 })
 export default router;
