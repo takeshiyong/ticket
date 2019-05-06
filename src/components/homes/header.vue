@@ -6,7 +6,7 @@
         <div class="header-search">
             <span class="iconfont search">&#xe632;</span>
             输入城市/景点/游戏主题</div>
-        <div class="header-right">城市
+        <div class="header-right">{{this.city}}
             <span class="iconfont city">&#xe64a;</span>
         </div>
     </div>
@@ -15,7 +15,9 @@
 <script>
 
 export default {
-
+    props:{
+        city: String
+    }
 }
 </script>
 
