@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper :options="swiperOption">
+    <swiper>
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div class="icon" v-for="item of page" :key="item.id">
           <div class="icons-img">
@@ -9,7 +9,7 @@
           <p class="icons-com">{{item.name}}</p>
         </div>
       </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
+      <!-- <div class="swiper-pagination" slot="pagination"></div> -->
     </swiper>
   </div>
 </template>
@@ -73,12 +73,8 @@ export default {
             "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
           name: "七日游"
         }
-      ],
-      swiperOption: {
-        pagination: {
-          el: ".swiper-pagination"
-        }
-      }
+      ]
+     
     };
   },
   computed: {
@@ -134,9 +130,7 @@ export default {
     height: 0.44rem;
     line-height: 0.44rem;
     color: @fontcolor;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    .ellipsis()
   }
 }
 </style>
