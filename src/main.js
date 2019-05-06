@@ -5,7 +5,9 @@ import fastClick from 'fastclick';
 import 'styles/border.css';
 import 'styles/reset.css';
 import 'styles/iconfont.css';
-
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper);
 
 fastClick.attach(document.body);
 
