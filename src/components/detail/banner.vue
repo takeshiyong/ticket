@@ -3,13 +3,12 @@
     <div class="banner-img">
       <img
         class="banner-img-ban"
-        src="//img1.qunarzz.com/sight/p0/1603/5d/5dd523afbdbb037c90.water.jpg_600x330_5349106d.jpg"
+        :src="bannerImg"
         alt
       >
     </div>
-    
     <div class="banner-con">
-      <div class="banner-title">乌镇(AAAA景区)</div>
+      <div class="banner-title">{{sightName}}</div>
       <div class="banner-num">
         <span class="iconfont city">&#xe616;</span>39
       </div>
@@ -18,7 +17,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:{
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  }
+};
 </script>
 
 <style lang="less" scoped>
