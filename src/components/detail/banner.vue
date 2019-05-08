@@ -7,9 +7,7 @@
         alt
       >
     </div>
-    <div class="out">
-      <span class="iconfont left">&#xe624;</span>
-    </div>
+    
     <div class="banner-con">
       <div class="banner-title">乌镇(AAAA景区)</div>
       <div class="banner-num">
@@ -45,7 +43,7 @@ export default {};
       text-indent: 0.2rem;
       font-size: 0.36rem;
     }
-    .banner-num {
+    .banner-num { 
       padding: 0 0.4rem;
       line-height: 0.4rem;
       height: 0.4rem;
@@ -53,17 +51,6 @@ export default {};
       background: rgba(0, 0, 0, 0.8);
     }
   }
-  .out {
-    position: absolute;
-    color: #ffffff;
-    top: 0.2rem;
-    left: 0.2rem;
-    width: 0.72rem;
-    line-height: 0.72rem;
-    text-align: center;
-
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 0.36rem;
-  }
+ 
 }
 </style>
