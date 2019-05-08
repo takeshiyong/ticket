@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router'
+import store from './components/stores';
 import fastClick from 'fastclick';
 import 'styles/border.css';
 import 'styles/reset.css';
@@ -19,5 +20,6 @@ const vm = new Vue({
     // render: (c) => c(App),
    template: '<App/>'
     ,
-    router
+    router,
+    store
 })

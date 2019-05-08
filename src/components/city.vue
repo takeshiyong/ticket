@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header/>
-    <Search/>
+    <Search :cities="cities"/>
     <List :cities="cities" :hotCities="hotCities" :letter="letter"/>
     <alphabet :cities="cities" @change="handleChange"/>
   </div>
