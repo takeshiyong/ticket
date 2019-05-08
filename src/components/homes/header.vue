@@ -17,9 +17,10 @@
 </template>
 
 <script>
+import { mapState } from "Vuex";
 export default {
-  props: {
-    city: String
+  computed:{
+    ...mapState(['city'])
   }
 };
 </script>
@@ -54,12 +55,15 @@ export default {
     }
   }
   .header-right {
-    width: 1.24rem;
+    min-width: 1.24rem;
+    padding: 0 .1rem; 
     float: right;
     text-align: center;
     color: #fff;
     .city {
-      margin-left: 0.05rem;
+      
+      margin-left: -.04rem;
+      font-size: .24rem;
     }
   }
 }
